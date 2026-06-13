@@ -22,6 +22,7 @@ every push to `main`. (Requires a public repo on the free tier.)
 - `index.html` — page content and structure
 - `styles.css` — theme and layout
 - `script.js` — mobile nav + availability calendar
+- `assets/cavoodle.jpg` — About-section photo. By [Aivi1987](https://commons.wikimedia.org/wiki/File:F1_Red_Toy_Cavoodle_Puppy.jpg), [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (resized/compressed). Keep the footer credit if you keep the photo.
 
 ## Things to customise (placeholders are marked below)
 

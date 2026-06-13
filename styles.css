@@ -150,7 +150,9 @@ a { color: var(--accent-deep); }
 /* ===== About ===== */
 .about { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 2.4rem; align-items: center; }
 .about-art { display: grid; place-items: center; }
-.about-emoji { font-size: 9rem; background: var(--cream-deep); width: 200px; height: 200px; border-radius: 50%; display: grid; place-items: center; box-shadow: var(--shadow-sm); }
+.about-emoji { background: var(--cream-deep); width: 200px; height: 200px; border-radius: 50%; display: grid; place-items: center; box-shadow: var(--shadow-sm); overflow: hidden; }
+.about-dog { width: 170px; height: auto; }
+.about-photo { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; object-position: center 28%; box-shadow: var(--shadow); border: 5px solid var(--white); }
 .about-copy p { color: var(--brown-soft); font-size: 1.05rem; }
 .ticks { list-style: none; padding: 0; margin: 1rem 0 0; }
 .ticks li { padding-left: 1.8rem; position: relative; margin-bottom: 0.5rem; font-weight: 600; color: var(--brown); }
@@ -176,6 +178,8 @@ a { color: var(--accent-deep); }
 .footer-tag { margin: 0 0 0.8rem; color: #d8c5ad; }
 .footer-copy { margin: 0; font-size: 0.85rem; color: #b8a488; }
 .footer-disclaimer { margin: 1rem auto 0; max-width: 52ch; font-size: 0.78rem; color: #9c8a72; font-style: italic; }
+.footer-credit { margin: 0.5rem 0 0; font-size: 0.72rem; color: #8c7a64; }
+.footer-credit a { color: #c9b496; }
 
 /* ===== Reviews ===== */
 .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem; }
