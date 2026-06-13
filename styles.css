@@ -175,6 +175,23 @@ a { color: var(--accent-deep); }
 .footer-brand { font-family: 'Baloo 2', sans-serif; font-size: 1.4rem; margin: 0 0 0.2rem; }
 .footer-tag { margin: 0 0 0.8rem; color: #d8c5ad; }
 .footer-copy { margin: 0; font-size: 0.85rem; color: #b8a488; }
+.footer-disclaimer { margin: 1rem auto 0; max-width: 52ch; font-size: 0.78rem; color: #9c8a72; font-style: italic; }
+
+/* ===== Reviews ===== */
+.reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem; }
+.review { margin: 0; background: var(--white); border-radius: var(--radius); padding: 1.6rem; box-shadow: var(--shadow-sm); border: 1px solid #f1e3cf; }
+.review .stars { color: #f0a93c; font-size: 1.1rem; letter-spacing: 0.1em; margin-bottom: 0.6rem; }
+.review blockquote { margin: 0 0 0.8rem; font-size: 1.15rem; font-family: 'Baloo 2', sans-serif; color: var(--brown); line-height: 1.35; }
+.review figcaption { color: var(--brown-soft); font-weight: 700; font-size: 0.95rem; }
+
+/* ===== FAQ ===== */
+.faq { max-width: 720px; }
+.faq-item { background: var(--white); border: 1px solid #f1e3cf; border-radius: 14px; padding: 0 1.2rem; margin-bottom: 0.8rem; box-shadow: var(--shadow-sm); }
+.faq-item summary { cursor: pointer; list-style: none; padding: 1.1rem 0; font-weight: 700; color: var(--brown); font-family: 'Baloo 2', sans-serif; font-size: 1.1rem; display: flex; justify-content: space-between; align-items: center; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; color: var(--accent); font-size: 1.4rem; transition: transform 0.15s ease; }
+.faq-item[open] summary::after { content: "−"; }
+.faq-item p { margin: 0 0 1.1rem; color: var(--brown-soft); font-size: 1.05rem; }
 
 /* ===== Responsive ===== */
 @media (max-width: 820px) {
