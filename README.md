@@ -4,6 +4,20 @@ A warm, friendly single-page site for Wat Dog Groomers (Bayside, Brisbane). Plai
 HTML/CSS/JS — no build step. Open `index.html` in a browser, or host the folder
 on Netlify, GitHub Pages, Cloudflare Pages, or any static host.
 
+> Note: this is a **parody / for-fun** site for two real dogs (Winston & Ally),
+> not an actual grooming business.
+
+## Deploy (GitHub Pages)
+
+Hosted via GitHub Pages from the `main` branch root:
+
+1. Repo **Settings → Pages**
+2. **Source**: Deploy from a branch
+3. Branch **`main`**, folder **`/ (root)`** → Save
+
+Live at **https://watway.github.io/wat-groomers/** — redeploys automatically on
+every push to `main`. (Requires a public repo on the free tier.)
+
 ## Files
 - `index.html` — page content and structure
 - `styles.css` — theme and layout
