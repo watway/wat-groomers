@@ -30,6 +30,7 @@
         <a href="#services">Services</a>
         <a href="#availability">Availability</a>
         <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
         <a href="#reviews">Reviews</a>
         <a href="#faq">FAQ</a>
         <a href="#contact" class="nav-cta">Book now</a>
@@ -192,8 +193,35 @@
     </div>
   </section>
 
+  <!-- ===== Gallery ===== -->
+  <section id="gallery" class="section section-alt">
+    <div class="container">
+      <h2 class="section-title">Our work</h2>
+      <p class="section-sub">A real groom, fully documented. Client: Winston. Mood: damp. Tap a photo to enlarge.</p>
+
+      <div class="gallery">
+        <figure class="gallery-item">
+          <img src="assets/gallery/winston-bath.jpg" alt="Winston, a wet apricot cavoodle, sitting on a grooming table looking at the camera" loading="lazy" />
+          <figcaption>Bath time. Big eyes, bigger betrayal.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/gallery/winston-table.jpg" alt="Winston sitting on the grooming table glancing to the side" loading="lazy" />
+          <figcaption>Mid-groom check-in. Plotting an escape route.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/gallery/winston-wet.jpg" alt="A very wet, scruffy Winston being held steady on the grooming table" loading="lazy" />
+          <figcaption>Peak wet-dog. It gets better, we promise.</figcaption>
+        </figure>
+        <figure class="gallery-item">
+          <img src="assets/gallery/winston-blowdry.jpg" alt="Winston with a towel wrapped around his head being blow-dried by a groomer" loading="lazy" />
+          <figcaption>Towel turban and the blow-dry. Spa day, allegedly.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- ===== Reviews ===== -->
-  <section id="reviews" class="section section-alt">
+  <section id="reviews" class="section">
     <div class="container">
       <h2 class="section-title">Reviews</h2>
       <p class="section-sub">Don't just take our word for it. Take theirs (it's the same two clients, but still).</p>
@@ -221,7 +249,7 @@
   </section>
 
   <!-- ===== FAQ ===== -->
-  <section id="faq" class="section">
+  <section id="faq" class="section section-alt">
     <div class="container">
       <h2 class="section-title">Frequently asked questions</h2>
       <p class="section-sub">The questions on everyone's lips. Both of them.</p>
@@ -248,7 +276,7 @@
   </section>
 
   <!-- ===== Contact ===== -->
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section">
     <div class="container contact">
       <div class="contact-info">
         <h2 class="section-title">Book a groom</h2>
@@ -317,6 +345,12 @@
       <p class="footer-credit">Cavoodle photo by <a href="https://commons.wikimedia.org/wiki/File:F1_Red_Toy_Cavoodle_Puppy.jpg">Aivi1987</a>, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</p>
     </div>
   </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" id="lightbox-close" aria-label="Close image">×</button>
+    <img class="lightbox-img" id="lightbox-img" src="" alt="" />
+  </div>
 
   <script src="script.js"></script>
 </body>

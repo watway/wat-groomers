@@ -18,7 +18,30 @@ document.addEventListener('DOMContentLoaded', () => {
   document.getElementById('year').textContent = new Date().getFullYear();
   setupMobileNav();
   setupCalendar();
+  setupLightbox();
 });
+
+/* ---------- Gallery lightbox ---------- */
+function setupLightbox() {
+  const lb = document.getElementById('lightbox');
+  if (!lb) return;
+  const img = document.getElementById('lightbox-img');
+  const close = () => { lb.hidden = true; img.removeAttribute('src'); };
+
+  document.querySelectorAll('.gallery-item img').forEach((thumb) => {
+    thumb.addEventListener('click', () => {
+      img.src = thumb.src;
+      img.alt = thumb.alt;
+      lb.hidden = false;
+    });
+  });
+
+  lb.addEventListener('click', (e) => { if (e.target !== img) close(); });
+  document.getElementById('lightbox-close').addEventListener('click', close);
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && !lb.hidden) close();
+  });
+}
 
 /* ---------- Mobile nav ---------- */
 function setupMobileNav() {

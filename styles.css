@@ -188,6 +188,20 @@ a { color: var(--accent-deep); }
 .review blockquote { margin: 0 0 0.8rem; font-size: 1.15rem; font-family: 'Baloo 2', sans-serif; color: var(--brown); line-height: 1.35; }
 .review figcaption { color: var(--brown-soft); font-weight: 700; font-size: 0.95rem; }
 
+/* ===== Gallery ===== */
+.gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
+.gallery-item { margin: 0; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid #f1e3cf; }
+.gallery-item img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; cursor: zoom-in; transition: transform 0.25s ease; }
+.gallery-item img:hover { transform: scale(1.04); }
+.gallery-item figcaption { padding: 0.7rem 0.9rem; color: var(--brown-soft); font-size: 0.9rem; font-weight: 600; }
+
+/* ===== Lightbox ===== */
+.lightbox { position: fixed; inset: 0; z-index: 100; display: flex; align-items: center; justify-content: center; padding: 2rem; background: rgba(58, 46, 37, 0.92); }
+.lightbox[hidden] { display: none; }
+.lightbox-img { max-width: min(92vw, 640px); max-height: 88vh; border-radius: 14px; box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5); }
+.lightbox-close { position: absolute; top: 1rem; right: 1.4rem; background: none; border: none; color: #fff; font-size: 2.6rem; line-height: 1; cursor: pointer; }
+.lightbox-close:hover { color: var(--tan); }
+
 /* ===== FAQ ===== */
 .faq { max-width: 720px; }
 .faq-item { background: var(--white); border: 1px solid #f1e3cf; border-radius: 14px; padding: 0 1.2rem; margin-bottom: 0.8rem; box-shadow: var(--shadow-sm); }
