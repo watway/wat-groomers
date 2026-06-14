@@ -178,8 +178,6 @@ a { color: var(--accent-deep); }
 .footer-tag { margin: 0 0 0.8rem; color: #d8c5ad; }
 .footer-copy { margin: 0; font-size: 0.85rem; color: #b8a488; }
 .footer-disclaimer { margin: 1rem auto 0; max-width: 52ch; font-size: 0.78rem; color: #9c8a72; font-style: italic; }
-.footer-credit { margin: 0.5rem 0 0; font-size: 0.72rem; color: #8c7a64; }
-.footer-credit a { color: #c9b496; }
 
 /* ===== Reviews ===== */
 .reviews { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.4rem; }
@@ -189,6 +187,8 @@ a { color: var(--accent-deep); }
 .review figcaption { color: var(--brown-soft); font-weight: 700; font-size: 0.95rem; }
 
 /* ===== Gallery ===== */
+.gallery-group { font-family: 'Baloo 2', sans-serif; font-size: 1.4rem; color: var(--brown); margin: 0.5rem 0 1rem; padding-bottom: 0.4rem; border-bottom: 2px solid var(--tan); }
+.gallery + .gallery-group { margin-top: 2.4rem; }
 .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.2rem; }
 .gallery-item { margin: 0; background: var(--white); border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-sm); border: 1px solid #f1e3cf; }
 .gallery-item img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; display: block; cursor: zoom-in; transition: transform 0.25s ease; }
