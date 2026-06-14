@@ -152,7 +152,7 @@ a { color: var(--accent-deep); }
 .about-art { display: grid; place-items: center; }
 .about-emoji { background: var(--cream-deep); width: 200px; height: 200px; border-radius: 50%; display: grid; place-items: center; box-shadow: var(--shadow-sm); overflow: hidden; }
 .about-dog { width: 170px; height: auto; }
-.about-photo { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; object-position: center 28%; box-shadow: var(--shadow); border: 5px solid var(--white); }
+.about-photo { width: 240px; height: 240px; border-radius: 50%; object-fit: cover; object-position: center 42%; box-shadow: var(--shadow); border: 5px solid var(--white); }
 .about-copy p { color: var(--brown-soft); font-size: 1.05rem; }
 .ticks { list-style: none; padding: 0; margin: 1rem 0 0; }
 .ticks li { padding-left: 1.8rem; position: relative; margin-bottom: 0.5rem; font-weight: 600; color: var(--brown); }
