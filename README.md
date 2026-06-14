@@ -18,6 +18,11 @@ Hosted via GitHub Pages from the `main` branch root:
 Live at **https://watway.github.io/wat-groomers/** — redeploys automatically on
 every push to `main`. (Requires a public repo on the free tier.)
 
+### Cache-busting
+`styles.css` and `script.js` are linked with a `?v=N` query (e.g. `styles.css?v=1`)
+in `index.html`. **When you change either file, bump the number** (`?v=2`, `?v=3`, …)
+so returning visitors' browsers fetch the new version instead of a cached copy.
+
 ## Files
 - `index.html` — page content and structure
 - `styles.css` — theme and layout
